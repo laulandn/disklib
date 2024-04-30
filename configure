@@ -1,0 +1,47 @@
+#! /bin/bash
+
+# NOTE: This is just a nasty-hack-placeholder until I learn autoconfig
+# This file is used by multiple projects,
+# When modifying be sure to update central copy!
+
+echo "Configuring..."
+
+
+# Uncomment one of these to force cross compilation...
+#export CROSS=aarch64-linux-gnu
+#export CROSS=alpha-linux-gnu
+#export CROSS=arm-linux-androideabi
+#export CROSS=arm-linux-gnueabi
+#export CROSS=arm-linux-gnueabihf
+#export CROSS=arm-none-eabi
+#export CROSS=avr
+#export CROSS=clang
+#export CROSS=h8300-hitachi-coff
+#export CROSS=h8300-hms
+#export CROSS=i686-linux-gnu
+#export CROSS=i686-w64-mingw32
+#export CROSS=m68k-linux-gnu
+#export CROSS=mips64el-linux-gnuabi64
+#export CROSS=mips64-linux-gnuabi64
+#export CROSS=mipsel-linux-gnu
+#export CROSS=mips-linux-gnu
+#export CROSS=msp430
+#export CROSS=powerpc64le-linux-gnu
+#export CROSS=powerpc64-linux-gnu
+#export CROSS=powerpc-linux-gnu
+#export CROSS=powerpc-linux-gnuspe
+#export CROSS=s390x-linux-gnu
+#export CROSS=sh4-linux-gnu
+#export CROSS=sparc64-linux-gnu
+#export CROSS=wine
+#export CROSS=x86_64-linux-gnu
+#export CROSS=x86_64-w64-mingw32
+
+
+########################################
+
+echo "*** Running configure_runtime ***"
+../configure_runtime
+echo "*** Running configure_build ***"
+../configure_build
+
